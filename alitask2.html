@@ -18,7 +18,7 @@
             width: 100%;
             height: 100vh;
             /* background-color: aqua; */
-            background-image: url(./WhatsApp\ Image\ 2022-11-26\ at\ 7.01.33\ PM.jpeg);
+            background-image: url(../WhatsApp\ Image\ 2022-11-26\ at\ 7.01.33\ PM.jpeg);
             background-position: center;
             background-size: cover;
             padding: 50px 10px;
@@ -39,32 +39,32 @@
             width: 26%;
             height: 5vh;
             font-size: 20px;
-            padding-left: 5%;
+            padding-left: 2%;
             margin-left: 50%;
             background-color: initial;
             transform: translateX(-50%);
         }
 
         .pics-parent {
-            width: 45%;
+            width: 52%;
             height: max-content;
             margin: auto;
             /* margin-top: 0%; */
             /* border: 1px solid #000; */
             display: flex;
             justify-content: space-between;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
         }
 
         .pic1 {
             width: 250px;
             height: 250px;
-            background-image: url(./WhatsApp_Image_2022-11-26_at_5.05.35_PM-removebg-preview.png);
+            background-image: url(../WhatsApp_Image_2022-11-26_at_5.05.35_PM-removebg-preview.png);
             background-position: center;
             background-size: cover;
             margin-top: 30px;
             position: relative;
-            left: 7%;
+            /* left: 7%; */
         }
 
         .upperdiv {
@@ -73,21 +73,46 @@
             border-radius: 100px;
             background-color: black;
             color: white;
-            font-size: 10px;
-            padding-top: 15px;
-            padding-left: 5px;
+            font-size: 20px;
+            padding-top: 30px;
+            padding-left: 12px;
             margin-top: 30px ;
         }
 
         .pic2 {
             width: 250px;
             height: 250px;
-            background-image: url(./WhatsApp_Image_2022-11-26_at_5.05.46_PM-removebg-preview.png);
+            background-image: url(../WhatsApp_Image_2022-11-26_at_5.05.46_PM-removebg-preview.png);
             margin-top: -18px;
             background-position: center;
             background-size: cover;
             /* margin-top: 15px; */
         }
+
+
+        @media screen and (max-width:1100px) {
+            #container{
+                height: max-content;
+            }
+            .pics-parent{
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+        }
+        @media screen and (max-width:1000px) {
+            .pic1,
+            .pic2 {
+                width: 400px;
+                height: 400px;
+            }
+            #container>input{
+                font-size: 15px;
+                width: 200px;
+            }
+
+        }
+
+
 
 
 
@@ -101,6 +126,12 @@
             #container>p {
                 font-size: 13px;
                 line-height: 20px;
+            }
+            .upperdiv{
+                height: 50px;
+                width: 50px;
+                font-size: 10px;
+                padding-top: 10px;
             }
         }
 
@@ -122,6 +153,12 @@
             #container>input {
                 font-size: 12px;
                 padding: 0%;
+            }
+            .upperdiv{
+                height: 50px;
+                width: 50px;
+                font-size: 10px;
+                padding-top: 10px;
             }
         }
 
